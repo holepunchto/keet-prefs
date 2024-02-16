@@ -11,7 +11,7 @@ const PREFERENCES = path.join(Pear.config.storage, 'preferences.json')
 const NEXT = path.join(Pear.config.storage, 'preferences.next.json')
 
 if (Pear.config.key?.z32 === 'oeeoz3w6fjjt7bym3ndpa6hhicm8f8naxyk11z4iypeoupn6jzpo') {
-  if (fs.existsSync(PREFERENCES) === false) {
+  if (fs.existsSync(PREFERENCES) === false && fs.existsSync(NEXT) === false) {
     const next = path.join(PLATFORM_DIR, 'preferences.next.json')
     fs.writeFileSync(next, fs.readFileSync(path.join(PLATFORM_DIR, 'preferences.json')))
     fs.renameSync(next, PREFERENCES)
