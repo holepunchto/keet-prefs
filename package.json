@@ -1,7 +1,7 @@
 {
   "name": "keet-prefs",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "Keet Preferences library",
   "main": "index.js",
   "imports": {
     "fs": {
@@ -29,5 +29,13 @@
   },
   "devDependencies": {
     "brittle": "^3.4.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/holepunchto/keet-prefs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/holepunchto/keet-prefs/issues"
+  },
+  "homepage": "https://github.com/holepunchto/keet-prefs#readme"
 }
