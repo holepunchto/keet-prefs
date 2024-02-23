@@ -7,14 +7,15 @@ const mutexify = require('mutexify/promise')
 const Iambus = require('iambus')
 
 const preferences = path.join(Pear.config.storage, 'preferences.json')
+const next = path.join(Pear.config.storage, 'preferences.next.json')
 
 if (Pear.config.key?.z32 === 'oeeoz3w6fjjt7bym3ndpa6hhicm8f8naxyk11z4iypeoupn6jzpo') {
   if (fs.existsSync(preferences) === false) {
     fs.writeFileSync(preferences, fs.readFileSync(path.join(Pear.config.pearDir, 'preferences.json')))
+    fs.renameSync(next, preferences)
   }
 }
 
-const next = path.join(Pear.config.storage, 'preferences.next.json')
 let settings = {}
 try { settings = JSON.parse(fs.readFileSync(preferences)) } catch {}
 
