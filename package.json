@@ -24,11 +24,11 @@
     "bare-fs": "^2.1.5",
     "bare-path": "^2.1.0",
     "iambus": "^1.0.3",
-    "mutexify": "^1.4.0",
-    "standard": "^17.1.0"
+    "mutexify": "^1.4.0"
   },
   "devDependencies": {
-    "brittle": "^3.4.0"
+    "brittle": "^3.4.0",
+    "standard": "^17.1.0"
   },
   "repository": {
     "type": "git",
